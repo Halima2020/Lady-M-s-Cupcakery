@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lora';
-  background-image: linear-gradient(rgba(247, 47, 140, 0.65), rgba(245, 139, 201, 0.65)), url("../img/bgg.jpg");
+  background-image: linear-gradient(rgba(245, 204, 223, 0.65), rgba(245, 184, 219, 0.65)), url("../img/bgg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -71,11 +71,11 @@ p {
 }
 
 .bg-faded {
-  background-color: rgba((rgba(247, 47, 140, 0.65);
+  background-color: rgba((rgba(247, 47, 140, 0.1);
 }
 
 #mainNav {
-  background-color: rgba(245, 139, 201, 0.65);
+  background-color: rgb(247, 73, 148);
   font-family: 'Raleway';
 }
 
@@ -113,6 +113,32 @@ p {
   padding-right: 2rem;
 }
 
+.btn {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #fec810 !important;
+  border-color: #fec810 !important;
+  color: white;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+
 .intro {
   position: relative;
 }
@@ -145,7 +171,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: rgba(230, 86, 230, 0.9);
 }
 
 .cta .cta-inner {
@@ -202,7 +228,7 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  border-bottom: 1px solid rgb(220, 81, 233);
   padding-bottom: .25rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -210,7 +236,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: #b057b8;
 }
 
 @media (min-width: 992px) {
@@ -225,7 +251,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color:  rgb(247, 73, 148);
 }
 
 .text-primary {
@@ -253,3 +279,29 @@ p {
 .font-weight-light {
   font-weight: 100 !important;
 }
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+ }

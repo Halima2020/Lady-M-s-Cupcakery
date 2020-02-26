@@ -14,6 +14,10 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/business-casual.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
@@ -25,7 +29,9 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">Lady M's Cupcakery</span>
+      <span class="site-heading-upper text-primary mb-3"></span>
+      <span class="site-heading-lower"></span>
+      <img src="img/logo.png" width="250px" height="auto" alt="">
     </h1>
 
     <!-- Navigation -->
@@ -61,7 +67,7 @@
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Hours</span>
+                <span class="section-heading-upper"></span>
                 <span class="section-heading-lower">We're Taking Orders</span>
               </h2>
               <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
@@ -93,12 +99,22 @@
                   Saturday
                   <span class="ml-auto">Reserved for baking</span>
                 </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <b>Order Inquiries for a quote:</b>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">Event Date, Number of servings, Theme and Colors, Picture for reference and Ideas<br>
+                   (If available).
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <b>All orders are custom to your needs!</b>
+                </li>
               </ul>
               <p class="address mb-5">
                 <em>
                   <strong>Saginaw, Texas</strong>
                   <br>
-                  <i class="fa-envelope-o"></i> <a href="mailto:Ladymbakes@yahoo.com" style="text-decoration: none; color: black;">Ladymbakes@yahoo.com</a>
+                  <i class="fa fa-envelope-o"></i> <a href="mailto:Ladymbakes@yahoo.com" style="text-decoration: none; color: black;">Ladymbakes@yahoo.com</a><br>
+                  Follow us:
                 </em>
               </p>
               <p class="mb-0">
@@ -107,7 +123,8 @@
                 </small>
                 <br>
                 <i class="fa fa-phone"></i>
-                 <a href="tel: 682 774 7642"></a> 682.774.7642<br /></a> 
+                 <a href="tel: 682 774 7642" style="color: black; text-decoration: none;">682.774.7642 </a><br />
+                 <i class="fab fa-facebook"></i>
               </p>
             </div>
           </div>
@@ -123,13 +140,11 @@
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Welcome to Lady M's Cupcakery.</span>
-                <span class="section-heading-lower">About Lady M's Cupcakery</span>
+                  <span class="section-heading-upper"></span>
+                <span class="section-heading-lower">Placing an Order</span>
                 </h2>
-                <p>I am a  home based bakery located in Saginaw, Texas. 
-                  I specialize in custom designed and decorated cakes, cookies, cake pops cupcakes and more, made especially for you.
-                  Please take a look at some of my work that i have created for my past clients then give me a call for that perfect cake for any special occasion, 
-                  including Weddings, Anniversaries, Birthdays, Quinceneras, Graduations, Baby Showers, Bridal Showers, Holidays and much more. </p>
+                <p>I need a minimum of 3 weeks prior to event. Rush orders will be assessed for a fee. Deposit will be needed in order to reserve your date and order must be paid in full 1 week prior to event.
+                  (Deposits are NON refundable) </p>
                   <p class="mb-0"> I look forward to working with you and making your special day just that much sweeter!</p>
                </div>
             </div>
@@ -138,9 +153,67 @@
       </div>
     </section>
 
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper"></span>
+              <span class="section-heading-lower text-center">Contact us</span>
+              </h2>
+              <br>
+                <div class="row">
+                  <div class="col-xl-9 col-lg-10 mx-auto">
+                      <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                          <div class="row">
+                              <div class="col-xl-9 col-lg-10 mx-auto">
+                                  <div class="md-form mb-0">
+                                      <input type="text" id="name" name="name" class="form-control">
+                                      <label for="name" class="">Your name</label>
+                                  </div>
+                              </div>
+                              <div class="col-xl-9 col-lg-10 mx-auto">
+                                  <div class="md-form mb-0">
+                                      <input type="text" id="email" name="email" class="form-control">
+                                      <label for="email" class="">Your email</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xl-9 col-lg-10 mx-auto">
+                                  <div class="md-form mb-0">
+                                      <input type="text" id="subject" name="subject" class="form-control">
+                                      <label for="subject" class="">Subject</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-xl-9 col-lg-10 mx-auto">
+                                  <div class="md-form">
+                                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                      <label for="message">Your message</label>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                      <div class="text-center text-md-center">
+                          <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                      </div>
+                      <div class="status"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<br / class="hide">
+
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 small">Copyright &copy; Lady M's Cupcakery 2019</p>
       </div>
     </footer>
 
